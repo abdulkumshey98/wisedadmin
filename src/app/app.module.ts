@@ -11,11 +11,15 @@ import { AppComponent } from './app.component';
 import { ErrorPageComponent } from './views/pages/error-page/error-page.component';
 
 import { HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
+import { NewsComponent } from './views/pages/news/news.component';
+import { ViewNewsComponent } from './views/pages/news/view-news/view-news.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ErrorPageComponent,
+    NewsComponent,
+    ViewNewsComponent,
   ],
   imports: [
     BrowserModule,
