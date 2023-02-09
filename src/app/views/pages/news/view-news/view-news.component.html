@@ -1,8 +1,8 @@
 <nav class="page-breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a routerLink=".">News</a></li>
+    <li class="breadcrumb-item"><a routerLink="/news">News</a></li>
     <li class="breadcrumb-item active"
-        aria-current="page">Data table</li>
+        aria-current="page">View News</li>
   </ol>
 </nav>
 
@@ -19,20 +19,38 @@
               <tr>
                 <th>ID</th>
                 <th>title</th>
-                <th>Brand</th>
-                <th>Age</th>
-                <th>Start date</th>
-                <th>Salary</th>
+                <th>Category</th>
+                <th>Language</th>
+                <th>Country</th>
+                <th>Status</th>
+                <th>Date</th>
+                <th>By</th>
+                <th>&nbsp;</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>#382911</td>
                 <td>System Architect</td>
-                <td>Edinburgh</td>
-                <td>61</td>
+                <td>Business</td>
+                <td>English</td>
+                <td>India</td>
+                <td>Active</td>
                 <td>2011/04/25</td>
-                <td>$320,800</td>
+                <td>Abdul Kumshey</td>
+                <td>
+                  <div ngbDropdown>
+                    <button class="btn btn-secondary"
+                            id="dropdownBasic1"
+                            ngbDropdownToggle>Dropdown button</button>
+                    <div ngbDropdownMenu
+                         aria-labelledby="dropdownBasic1">
+                      <button ngbDropdownItem>Action - 1</button>
+                      <button ngbDropdownItem>Another Action</button>
+                      <button ngbDropdownItem>Something else is here</button>
+                    </div>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td>Garrett Winters</td>

@@ -13,6 +13,7 @@ import { QuillModule } from 'ngx-quill';
 import { ArchwizardModule } from 'angular-archwizard';
 import { NewsComponent } from './news.component';
 import { ViewNewsComponent } from './view-news/view-news.component';
+import { NgbDropdown, NgbModal, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 const routes: Routes = [
@@ -38,6 +39,8 @@ const routes: Routes = [
   imports: [
     CommonModule,
     FormsModule,
+    NgbModule,
+
     ReactiveFormsModule,
     RouterModule.forChild(routes),
     FeatherIconModule,
