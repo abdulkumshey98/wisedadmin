@@ -17,7 +17,7 @@ export const MENU: MenuItem[] = [
     subItems: [
        {
         label: 'Add News',
-        link: 'news/view-news',
+        link: 'news/add-news',
       },
       {
         label: 'News',

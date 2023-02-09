@@ -10,14 +10,16 @@
     <app-navbar></app-navbar>
     <!-- partial -->
 
-    <div class="page-content">
+    <div class=" page-content">
 
       <!-- Spinner for lazyload modules -->
-      <div *ngIf="isLoading" class="spinner-wrapper">
+      <div *ngIf="isLoading"
+           class="spinner-wrapper">
         <div class="spinner">Loading...</div>
       </div>
 
-      <div contentAnimate *ngIf="!isLoading">
+      <div contentAnimate
+           *ngIf="!isLoading">
         <router-outlet></router-outlet>
       </div>
 

@@ -13,6 +13,9 @@ import { ErrorPageComponent } from './views/pages/error-page/error-page.componen
 import { HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 import { NewsComponent } from './views/pages/news/news.component';
 import { ViewNewsComponent } from './views/pages/news/view-news/view-news.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+
 
 @NgModule({
   declarations: [
@@ -26,6 +29,7 @@ import { ViewNewsComponent } from './views/pages/news/view-news/view-news.compon
     AppRoutingModule,
     BrowserAnimationsModule,
     LayoutModule,
+    NgbModule,
   ],
   providers: [
     AuthGuard,
