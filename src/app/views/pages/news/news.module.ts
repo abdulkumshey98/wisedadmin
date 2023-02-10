@@ -14,6 +14,7 @@ import { NewsComponent } from './news.component';
 import { ViewNewsComponent } from './view-news/view-news.component';
 import { NgbDropdown, NgbModal, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AddNewsComponent } from './add-news/add-news.component';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 
 const routes: Routes = [
@@ -45,7 +46,7 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     NgbModule,
-
+    NgSelectModule,
     ReactiveFormsModule,
     RouterModule.forChild(routes),
     FeatherIconModule,

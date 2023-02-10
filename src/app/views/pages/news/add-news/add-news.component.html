@@ -4,6 +4,33 @@
       <div class="card-body">
         <form>
           <div class="row">
+
+            <div class="col-sm-4">
+              <div>
+                <img class="col-sm-12"
+                     src="https://images.pexels.com/photos/14005687/pexels-photo-14005687.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                     alt="...">
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+
+                <div class="card-body">
+
+                  <div class="mb-3">
+                    <label class="form-label"
+                           for="formFile">File upload</label>
+                    <input class="form-control"
+                           type="file"
+                           id="formFile">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
             <div class="col-sm-4">
               <div class="mb-3">
                 <label class="form-label">Title</label>
@@ -11,31 +38,29 @@
                        class="form-control"
                        placeholder="Enter Full title">
               </div>
-            </div><!-- Col -->
-            <div class="col-sm-2">
-              <div class="mb-3">
-                <label class="form-label">Title</label>
-                <input type="text"
-                       class="form-control"
-                       placeholder="Enter Full title">
-              </div>
             </div>
-            <div class="col-sm-2">
-              <div class="mb-3">
-                <label class="form-label">Country</label>
-                <ng-select [items]="people"
-                           bindLabel="name"
-                           bindValue="id"
-                           placeholder="type to search"
-                           [(ngModel)]="selectedSearchPersonId">
-                </ng-select>
-              </div>
-            </div>
+
             <div class="col-sm-2">
               <div class="mb-3">
                 <div>
-                  <label class="form-label">Language</label>
+                  <label class="form-label">Country</label>
                   <select class="form-select form-select">
+                    <option selected>Start Up</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="mb-3">
+                <div>
+
+                  <label class="form-label">Language</label>
+
+                  <select class="form-select form-select">
+
                     <option selected>Hindi</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
@@ -44,17 +69,16 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-2">
+
+            <div class="col-sm-3">
               <div class="mb-3">
-                <div>
-                  <label class="form-label">Category</label>
-                  <select class="form-select form-select">
-                    <option selected>Start Up</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
+                <label class="form-label">Category</label>
+                <ng-select [items]="people"
+                           bindLabel="name"
+                           bindValue="id"
+                           placeholder="type to search"
+                           [(ngModel)]="selectedSearchPersonId">
+                </ng-select>
               </div>
             </div>
             <div class="col-sm-12">

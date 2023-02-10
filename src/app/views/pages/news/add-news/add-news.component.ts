@@ -10,8 +10,7 @@ import { PeoplesData, Person } from '../../../../core/dummy-datas/peoples.data';
 })
 export class AddNewsComponent implements OnInit {
 
-
-  simpleItems: any = [];
+ simpleItems: any = [];
   selectedSimpleItem: any = null;
 
   people: Person[] = [];
@@ -19,6 +18,7 @@ export class AddNewsComponent implements OnInit {
 
   selectedSearchPersonId: string = '';
 
+  selectedSearchPersonIds: string = '';
   selectedPeople: any = null;
 
   groupedMultiSelectedPeople: any = null;
@@ -30,7 +30,10 @@ export class AddNewsComponent implements OnInit {
   ngOnInit(): void {
 
     // simple array
+    this.simpleItems = [true, 'Two', 3];
 
+    // array of objects
+    this.people = PeoplesData.peoples;
 
   }
 }
