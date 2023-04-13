@@ -18,6 +18,7 @@ import { NgbDropdown, NgbModal, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AddNewsComponent } from './add-news/add-news.component';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { NgxChipsComponent } from '../advanced-form-elements/ngx-chips/ngx-chips.component';
+import { OtherDetailsComponent } from './other-details/other-details.component';
 
 
 const routes: Routes = [
@@ -44,6 +45,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AddNewsComponent,
+    OtherDetailsComponent,
   ],
   imports: [
     CommonModule,
