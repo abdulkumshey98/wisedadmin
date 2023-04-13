@@ -13,25 +13,48 @@
 
               </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-8">
               <div class="card">
 
                 <div class="card-body">
-
-                  <div class="mb-3">
-                    <label class="form-label"
-                           for="formFile">File upload</label>
-                    <input class="form-control"
-                           type="file"
-                           id="formFile">
+                  <div class="row mt-4">
+                    <div class="col-sm-6">
+                      <div>
+                        <label class="form-label">Type</label>
+                        <select class="form-select form-select">
+                          <option selected>Select Source</option>
+                          <option value="1">Img</option>
+                          <option value="2">Youtube</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="mb-3">
+                        <label class="form-label">Url</label>
+                        <input type="text"
+                               class="form-control"
+                               placeholder="Enter URL">
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="mb-3">
+                        <label class="form-label"
+                               for="formFile">File upload</label>
+                        <input class="form-control"
+                               type="file"
+                               id="formFile">
+                      </div>
+                    </div>
                   </div>
+
+
                 </div>
 
               </div>
             </div>
           </div>
           <div class="row mt-4">
-            <div class="col-sm-6">
+            <div class="col-sm-12">
               <div class="mb-3">
                 <label class="form-label">Title</label>
                 <input type="text"
@@ -40,20 +63,19 @@
               </div>
             </div>
 
-            <div class="col-sm-2">
+            <div class="col-sm-4">
               <div class="mb-3">
-                <div>
-                  <label class="form-label">Country</label>
-                  <select class="form-select form-select">
-                    <option selected>Start Up</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
+                <label class="form-label">Countries</label>
+                <select class="form-select form-select">
+
+                  <option selected>India</option>
+                  <option value="1">Dubai</option>
+                  <option value="2">Saudi </option>
+                  <option value="3">United States</option>
+                </select>
               </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-4">
               <div class="mb-3">
                 <div>
 
@@ -61,16 +83,16 @@
 
                   <select class="form-select form-select">
 
-                    <option selected>Hindi</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option selected>English</option>
+                    <option value="1">Kannada</option>
+                    <option value="2">Urdu</option>
+                    <option value="3">Marathi</option>
                   </select>
                 </div>
               </div>
             </div>
 
-            <div class="col-sm-2">
+            <div class="col-sm-4">
               <div class="mb-3">
                 <label class="form-label">Category</label>
                 <ng-select [items]="people"
@@ -93,6 +115,7 @@
 
           </div><!-- Row -->
           <div class="row mt-2">
+
             <div class="col-sm-3">
               <div class="mb-3">
                 <label class="form-label">Company</label>

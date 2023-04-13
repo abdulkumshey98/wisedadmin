@@ -13,6 +13,11 @@ export interface Person {
   disabled?: boolean;
 }
 
+export interface countries {
+  id: string;
+  name: string;
+}
+
 export class PeoplesData {
   public static peoples: Person[] = [
 		// ng-select => peoples
@@ -209,5 +214,17 @@ export class PeoplesData {
       'email': 'diannbooker@lyria.com',
       'phone': '+1 (830) 555-3209'
     }
+  ]
+
+
+}
+
+export class countryAvail {
+   public static countryName: countries[] = [
+		// ng-select => peoples
+    {
+      'id': '5a15b13c36e7a7f00cf0d7cb',
+      'name': 'India',
+    },
   ]
 }
