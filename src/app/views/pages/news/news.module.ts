@@ -7,6 +7,8 @@ import { FeatherIconModule } from '../../../core/feather-icon/feather-icon.modul
 
 // ngx-quill
 import { QuillModule } from 'ngx-quill';
+import { TagInputModule } from 'ngx-chips';
+
 
 // angular-archwizard
 import { ArchwizardModule } from 'angular-archwizard';
@@ -15,6 +17,7 @@ import { ViewNewsComponent } from './view-news/view-news.component';
 import { NgbDropdown, NgbModal, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AddNewsComponent } from './add-news/add-news.component';
 import { NgSelectModule } from '@ng-select/ng-select';
+import { NgxChipsComponent } from '../advanced-form-elements/ngx-chips/ngx-chips.component';
 
 
 const routes: Routes = [
@@ -46,6 +49,7 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     NgbModule,
+    TagInputModule,
     NgSelectModule,
     ReactiveFormsModule,
     RouterModule.forChild(routes),

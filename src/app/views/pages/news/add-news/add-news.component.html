@@ -30,8 +30,8 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-sm-4">
+          <div class="row mt-4">
+            <div class="col-sm-6">
               <div class="mb-3">
                 <label class="form-label">Title</label>
                 <input type="text"
@@ -53,7 +53,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-2">
               <div class="mb-3">
                 <div>
 
@@ -70,14 +70,13 @@
               </div>
             </div>
 
-            <div class="col-sm-3">
+            <div class="col-sm-2">
               <div class="mb-3">
                 <label class="form-label">Category</label>
                 <ng-select [items]="people"
                            bindLabel="name"
                            bindValue="id"
-                           placeholder="type to search"
-                           [(ngModel)]="selectedSearchPersonId">
+                           placeholder="type to search">
                 </ng-select>
               </div>
             </div>
@@ -93,18 +92,20 @@
             </div>
 
           </div><!-- Row -->
-          <div class="row">
-            <div class="col-sm-4">
+          <div class="row mt-2">
+            <div class="col-sm-3">
               <div class="mb-3">
-                <label class="form-label">City</label>
-                <input type="text"
-                       class="form-control"
-                       placeholder="Enter city">
+                <label class="form-label">Company</label>
+                <ng-select [items]="people"
+                           bindLabel="name"
+                           bindValue="id"
+                           placeholder="type to search">
+                </ng-select>
               </div>
-            </div><!-- Col -->
+            </div> <!-- Col -->
             <div class="col-sm-4">
               <div class="mb-3">
-                <label class="form-label">State</label>
+                <label class="form-label">URL</label>
                 <input type="text"
                        class="form-control"
                        placeholder="Enter state">
@@ -112,32 +113,19 @@
             </div><!-- Col -->
             <div class="col-sm-4">
               <div class="mb-3">
-                <label class="form-label">Zip</label>
-                <input type="text"
-                       class="form-control"
-                       placeholder="Enter zip code">
+                <label class="form-label">Topics</label>
+                <ng-select [items]="people"
+                           [multiple]=true
+                           [closeOnSelect]="false"
+                           [searchable]="false"
+                           bindLabel="name"
+                           placeholder="Select Topics">
+                </ng-select>
               </div>
-            </div><!-- Col -->
+            </div>
+            <!-- Col -->
           </div><!-- Row -->
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="mb-3">
-                <label class="form-label">Email address</label>
-                <input type="email"
-                       class="form-control"
-                       placeholder="Enter email">
-              </div>
-            </div><!-- Col -->
-            <div class="col-sm-6">
-              <div class="mb-3">
-                <label class="form-label">Password</label>
-                <input type="password"
-                       class="form-control"
-                       autocomplete="off"
-                       placeholder="Password">
-              </div>
-            </div><!-- Col -->
-          </div><!-- Row -->
+          <!-- Row -->
         </form>
         <button type="button"
                 class="btn btn-primary submit">Submit form</button>
